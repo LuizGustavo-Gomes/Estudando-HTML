@@ -1,0 +1,166 @@
+<html>
+
+    <!--Para trabalhar com tabelas no html usamos a tag table para criação base da tabela, tr para criar um espaço 
+    dentro dessa tabela (uma linha) e dentro da tr nos usamos th para criar o cabeçalho da coluna e td para inserir
+    os dados:-->
+
+    <!--Da mesma maneira que temos head e body no corpo da página também usamos thead e tbody para criação de cabeçalho
+    e corpo da nossa tabela.-->
+
+    <!--
+    cowspan: Tamanho da colula
+    rowspan: Tamanho da celula
+    border: adiciona uma borda a tabela
+    -->
+
+    <head>
+        <title>Tabelas no HTML</title>
+    </head>
+
+    <body>
+        <h1>Criação de tabelas no HTML</h1>
+
+        <table border="1">
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+            </tr>
+            <tr>
+                <td>Dado 1</td>
+                <td>Dado 2</td>
+            </tr>
+            <tr>
+                <td>Dado 3</td>
+                <td>Dado 4</td>
+            </tr>
+        </table>
+        
+        <hr>
+
+        <h2>Tabelas com cabeçalho</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td>38</td>
+                    <td>Engenheiro</td>
+                </tr>
+    
+                <tr>
+                    <td>Maria</td>
+                    <td>25</td>
+                    <td>Advogada</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Tabelas com células personalizadas</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Informações Pessoais</th>
+                    <th>Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome:</td>
+                    <td>João</td>
+                    <td rowspan="2">Telefone:123456</td>
+                </tr>
+                <tr>
+                    <td>Idade:</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Nome:</td>
+                    <td>Tiago</td>
+                    <td rowspan="2">Telefone:654321</td>
+                </tr>
+                <tr>
+                    <td>Idade:</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Participantes</th>
+                    <th>Frequentou</th>
+                    <th>local</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome:</td>
+                    <td>Luiz</td>
+                    <td rowspan="4">8 Vezes</td>
+                    <td rowspan="4">Olinda</td>
+                </tr>
+                <tr>
+                    <td>Idade:</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>Cor:</td>
+                    <td>Branco</td>
+                </tr>
+                <tr>
+                    <td>Sexo:</td>
+                    <td>Masculino</td>
+                </tr>
+                
+                <tr>
+                    <td>Nome:</td>
+                    <td>Malu</td>
+                    <td rowspan="4">9 Vezes</td>
+                    <td rowspan="4">Olinda</td>
+                </tr>
+                <tr>
+                    <td>Idade:</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Cor:</td>
+                    <td>Preta</td>
+                </tr>
+                <tr>
+                    <td>Sexo:</td>
+                    <td>Feminino</td>
+                </tr>
+            </tbody>
+
+            <tr>
+                <td>Nome:</td>
+                <td>Carolina</td>
+                <td rowspan="4">4 Vezes</td>
+                <td rowspan="4">Caruaru</td>
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Cor:</td>
+                <td>Preta</td>
+            </tr>
+            <tr>
+                <td>Sexo:</td>
+                <td>Feminino</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
